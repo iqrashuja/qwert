@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -20,29 +21,70 @@
 
     <!-- Favicon-->
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="home/css/styles.css" rel="stylesheet" />
-    
+    <link href="home/css/styles.css" rel="stylesheet" /> 
+
     <style>
         .bg-header {
-            --bs-bg-opacity: 1;
-
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6),#000000) !important;
+            background-color: rgba(15, 87, 251, 0.6) !important;
+        background-color: rgba(15, 87, 251, 0.6) !important;
         }
+
         .bg-footer {
             --bs-bg-opacity: 1;
-        background-image: linear-gradient(#000000,#000000) !important;
+        background-image: linear-gradient( #0F57FB, #0F57FB) !important;
         }
-        .header-text-color{
+
+        .header-text-color {
         color: #ffffff;
         }
-        .footer-text-color{
-        color: #ffffff ;
-        }
-        .footer-text-color .navbar-brand{
-        color: #ffffff;
-        }
+
+
         .navbar-nav .active {
         border-bottom: solid 1px #ffffff !important;
+        }
+
+        .top-area {
+            height: 30rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url(banner_image.png);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+        }
+
+        .header-transparent-layer {
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .header-transparent-layer .contents {
+            padding: 2rem;
+        }
+
+        @media (min-width: 801px) {
+            .custom-position {
+                margin: 3rem auto;
+                width: 45%;
+                border-radius: 30px;
+                padding: 0;
+                margin-left: 10%;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .custom-position {
+                margin: 3rem auto;
+                width: 80%;
+                border-radius: 30px;
+                padding: 0;
+            }
+            .text-start {
+                text-align: center !important;
+            }
         }
         body {
                     background-color: #292921;
@@ -68,35 +110,20 @@
                     background-image: none;
                 }
 
-
-
-                .bg-dark, .navbar-brand, .lmcy_hfollow, .bottom_footer_menu_text, .bottom_footer_menu_text li a{
+                .bg-dark, .navbar-brand {
                     color: #f1b914 !important;
-                }
-
-                .lmcy_logo_n {
-                    color: #f1b914 !important;
-                }
-                .lmcy_header_magazine_style.lmcy_cus_top_share.header_layout_style3_custom .social_icon_header_top li a i{
-                color: #f1b914 !important;
                 }
 
                 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
                     color: #f1b914;
                 }
 
-                footer .social-link {
-                    color: #1f1d17 !important;
-                    background-color: #f1b914 !important;
-                }
-
                 .navbar-dark .navbar-nav .nav-link,
                 .dropdown-content a,
-                footer.py-5.bg-dark.text-center p,
                 footer.py-5.bg-dark.text-center a,
                 footer.py-5.bg-dark.text-center a:hover,
                 footer.py-5.bg-dark.text-center a:focus,
-                footer.py-5.bg-dark.text-center a:focus-visible, .header-text-color {
+                footer.py-5.bg-dark.text-center a:focus-visible {
                     color: #f1b914;
                 }
 
@@ -113,7 +140,7 @@
                     color: #f1b914;
                 }
 
-                footer.py-5.bg-dark.text-center, .footer-text-color {
+                footer.py-5.bg-dark.text-center {
                     color: #f1b914 !important;
                 }
 
@@ -147,7 +174,7 @@
 
 
                 .card-title, .card-heading {
-                    color: #ffffff;
+                    color: #404040;
                 }
 
                 .main-heading {
@@ -155,19 +182,15 @@
                 }
 
                 .card-text {
-                    color: #bbbbbb!important;
+                    color: #121212;
                     height: auto !important;
                     min-height: 140px;
                 }
- .card-text p {
-                    color: #bbbbbb!important;
-                   
-                }
                 .article-card-text {
                     color: #B5B5B5;
-                  
+                    
                 }
-		.article-card-text * {
+.article-card-text * {
                     color: #B5B5B5 !important;
                    background: none !important;
                 }
@@ -176,10 +199,17 @@
                     padding : 10px;
 
                 }
-
+.working-hours{
+background-color: #1d1c19 !important;
+                    border: 2px solid #12110e !important;                    
+}
+.working-hours-text{
+color: #ffffff !important;
+                    
+}
                 .cards-container .card {
                     background-color: #1d1c19 !important;
-                    border: 2px solid undefined !important;
+                    border: 2px solid #12110e !important;
                     border-radius: 14px;
                 }
 
@@ -188,105 +218,121 @@
                 }
 
                 .cards-container .card .card-text {
-                    color: #bbbbbb!important;
+                    color: #bbbbbb;
                 }
                 .article-info {
                     color: #bbbbbb;
                 }
     </style>
 </head>
+
 <body>
 <!-- Responsive navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container px-5">
-        <a style="color: inherit; text-decoration: inherit;" href="index.html">
-                    <span class="navbar-brand" >
+<div class="top-area">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container px-5">
+            <a style="color: inherit; text-decoration: inherit;" href="index.html">
+                    <span class="navbar-brand">
                         <img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()">
                     </span>
-            <span class="navbar-brand header-text-color">theme4</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
-                <li class="nav-item {{home_active}}">
-                    <a class="nav-link header-text-color" href="index.html">Home</a>
-                </li>
-                <div class="nav-item {{service_active}} dropdown">
-                    <button class="header-text-color dropbtn is-mobile">Services</button>
-                    <a class="nav-link header-text-color dropbtn is-desktop" href="services.html">Services</a>
-                    <div class="dropdown-content">
-                        <div class="dropdown-content2">
-                            <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="health-and-wellbeing-programs.html">Health and wellbeing programs
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="cultural-awareness-and-education.html">Cultural awareness and education
+                <span class="navbar-brand header-text-color">Automatically Generate Titles</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                    <li class="nav-item {{home_active}}">
+                        <a class="nav-link header-text-color" href="index.html">Home</a>
+                    </li>
+                    <div class="nav-item {{service_active}} dropdown">
+                        <button class="header-text-color dropbtn is-mobile">Services</button>
+                        <a class="nav-link header-text-color dropbtn is-desktop" href="services.html">Services</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-content2">
+                                <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
+                                                                                        href="ordinateur-portable.html">ordinateur portable
                                                                                         <span class="border-menu"></span></a></li>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <li class="nav-item {{blog_active}}">
-                    <a class="nav-link header-text-color" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item active" style="display: ">
-                    <a class="nav-link header-text-color" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item {{contact_active}}" style="display: inherit">
-                    <a class="nav-link header-text-color" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ms-4 mb-2 mb-lg-0" style="display: none">
-                <li class="nav-item" style="display: none">
-                    <a class="nav-link header-text-color" target="_blank" href="">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="nav-item" style="display: none">
-                    <a class="nav-link header-text-color" target="_blank" href="">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="nav-item" style="display: none">
-                    <a class="nav-link header-text-color" target="_blank" href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="nav-item" style="display: none">
-                    <a class="nav-link header-text-color" target="_blank" href="">
-                        <i class="fa-brands fa-pinterest"></i>
-                    </a>
-                </li>
-                <li class="nav-item" style="display: none">
-                    <a class="nav-link header-text-color" target="_blank" href="">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
+                    <li class="nav-item {{blog_active}}">
+                        <a class="nav-link header-text-color" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active" style="display: ">
+                        <a class="nav-link header-text-color" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item {{contact_active}}" style="display: inherit">
+                        <a class="nav-link header-text-color" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-4 mb-2 mb-lg-0" style="display: inherit">
+                    <li class="nav-item" style="display: none">
+                        <a class="nav-link header-text-color" target="_blank" href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="display: none">
+                        <a class="nav-link header-text-color" target="_blank" href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="display: none">
+                        <a class="nav-link header-text-color" target="_blank" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="display: none">
+                        <a class="nav-link header-text-color" target="_blank" href="">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="display: none">
+                        <a class="nav-link header-text-color" target="_blank" href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+    <nav class="navbar navbar-expand-lg overflow-hidden custom-position">
+        <div class="header-transparent-layer">
+            <div class="row col-lg-12 align-items-start contents">
+                <div class="col-lg-12 text-start">
+                    <h1 class="font-weight-light head-title">Automatically Generate Titles</h1>
+                    <span class="font-weight-light head-tagline"></span>
+                </div>
+                <div class="col-lg-12 text-start mt-5">
+                    <a class="btn btn-banner-theme btn-md mx-1 mt-1" style="display: none" target="_blank" href="tel:">Call Now</a>
+                    <a class="btn btn-banner-theme btn-md mx-1 mt-1" style="display: " target="_blank" href="mailto:aq@gammaweb.co.nz">Email Now</a>
+                    <button id="myBtn" class="btn btn-banner-theme btn-md mx-1 mt-1" style="display: none">Get Directions</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
 
+<div class="container article-container">
 
-<div class="container px-4 px-lg-5 article-container">
     <header class="py-2 border-bottom mb-4" style="display: none">
-        <div class="ql-editor p-4 article-card-text" id="sitewide-header" >
+        <div class="ql-editor py-4 article-card-text" id="sitewide-header">
             
         </div>
     </header>
-    <div class="row gx-4 gx-lg-5 align-items-center py-lg-5 cards-container article-card-text">
+    <div class="row gx-4 gx-lg-5 align-items-center py-lg-5 article-card-text">
         <!-- Heading Row-->
-        <div class="container px-4 px-lg-5 card-text">
+        <div class="container px-4 px-lg-5 article-card-text">
     <!-- Heading Row-->
     <div class="row gx-4 gx-lg-5 my-5">
 
-        <div class="col-12 col-xl-6 container">
-            <div class=" h-100 border-0 card-text">
-                <h2 class="mb-4 text-capitalize fw-bold">About theme4
+        <div class="col-12 col-xl-6">
+            <div class="h-100 border-0 article-card-text">
+                <h2 class="mb-4 text-capitalize fw-bold">About Automatically Generate Titles
             </h2>
 
             <p>
-                Welcome to theme4, a leading Aboriginal and Torres Strait Islander organization dedicated to promoting cultural awareness and fostering community connections in the heart of Alabama. At theme4, we are committed to honoring and preserving the rich heritage and traditions of the Aboriginal and Torres Strait Islander peoples through our programs and initiatives. Our mission is to empower indigenous communities, celebrate diversity, and create a more inclusive society for all.
+                Automatiquement gÃ©nÃ©rer des titres est le leader dans la prestation de services Ã©lectriques automobiles Ã  New Brunswick. Notre Ã©quipe qualifiÃ©e et expÃ©rimentÃ©e est spÃ©cialisÃ©e dans la rÃ©solution des problÃ¨mes Ã©lectriques de votre vÃ©hicule, offrant un service fiable et de qualitÃ© supÃ©rieure. Nous sommes fiers de notre engagement Ã  fournir des solutions efficaces pour tous les besoins Ã©lectriques de votre voiture, en veillant Ã  ce que vous puissiez prendre la route en toute confiance.
 
-Located in Alabama, theme4 serves as a hub for cultural exchange, education, and advocacy. Our team of dedicated professionals and volunteers work tirelessly to provide resources, support, and opportunities for individuals and families within the Aboriginal and Torres Strait Islander community. By collaborating with local partners and engaging with the broader community, theme4 aims to amplify indigenous voices, promote understanding, and advance social justice initiatives that benefit all Alabamians. Join us in our efforts to build a more equitable and harmonious future for present and future generations.
+En tant qu'entreprise basÃ©e Ã  New Brunswick, nous sommes dÃ©terminÃ©s Ã  offrir un service exceptionnel Ã  nos clients locaux. Chez Automatiquement GÃ©nÃ©rer des Titres, nous sommes passionnÃ©s par les vÃ©hicules et nous nous efforÃ§ons de nous tenir au courant des derniÃ¨res technologies et des pratiques exemplaires de l'industrie. Faites confiance Ã  notre expertise pour rÃ©soudre rapidement et efficacement les problÃ¨mes Ã©lectriques de votre vÃ©hicule, et laissez-nous vous aider Ã  assurer le bon fonctionnement de votre voiture.
             </p>
 
             <h3 class="h2 text-capitalize my-4">
@@ -294,28 +340,28 @@ Located in Alabama, theme4 serves as a hub for cultural exchange, education, and
             </h3>
 
             <p class="mb-md-4 mb-xl-0">
-                At theme4, our mission is to celebrate and promote the rich cultures and traditions of Aboriginal and Torres Strait Islander communities. We are dedicated to providing a platform for Indigenous voices to be heard and respected. Through our work, we aim to raise awareness about the contributions and struggles of First Nations people and create opportunities for cultural exchange and understanding. By collaborating with Indigenous artists, storytellers, and activists, we strive to empower and uplift Indigenous communities in Alabama and beyond.
+                Notre mission chez Automatically Generate Titles est de fournir un service exceptionnel de rÃ©paration Ã©lectrique automobile Ã  tous nos clients Ã  New Brunswick. Nous nous engageons Ã  offrir des services de haute qualitÃ© avec des solutions innovantes et efficaces pour rÃ©pondre aux besoins de nos clients. Notre objectif est de garantir la satisfaction de nos clients Ã  chaque visite en offrant un service professionnel, fiable et transparent.
 
-We are committed to fostering an inclusive and diverse society where Indigenous perspectives are valued and honored. Through educational programs, artistic initiatives, and community events, we seek to break down stereotypes and promote cross-cultural dialogue. At theme4, we envision a future where Aboriginal and Torres Strait Islander cultures are not only preserved but also integrated into the fabric of our society, enriching the lives of all who engage with them. Join us in our mission to support and amplify Indigenous voices for a more equitable and harmonious world.
+En tant qu'experts en services Ã©lectriques automobiles, nous nous efforÃ§ons de maintenir les normes les plus Ã©levÃ©es de professionnalisme et d'intÃ©gritÃ©. Notre Ã©quipe qualifiÃ©e est dÃ©diÃ©e Ã  fournir des solutions rapides et efficaces pour tous les problÃ¨mes Ã©lectriques de votre vÃ©hicule. Chez Automatically Generate Titles, notre passion pour l'industrie automobile nous motive Ã  surpasser les attentes de nos clients et Ã  Ã©tablir des relations de confiance Ã  long terme.
             </p>
             </div>
         </div>
 
         <div class="col-12 col-xl-6">
             <div class=" h-100 border-0 rounded-4 bg-transparent">
-                <img src="aboutus-260188.jpg?key=Vphpvr" alt="About Us" class="rounded-4" style="width:500px;">
+                <img src="aboutus-266896.jpg?key=lL93XM" alt="About Us" class="rounded-4" style="width:500px;">
             </div>
         </div>
 
 
         <div class="col-12 col-xl-12 container">
-            <div class=" h-100 border-0 card-text">
+            <div class=" h-100 border-0 article-card-text">
                 <h2 class="mt-4 mt-xl-0 mb-4 text-capitalize fw-bold">
                     Our values
                 </h2>
 
                 <div class="row g-4">
-                    <div class="col-sm-6 card-text">
+                    <div class="col-sm-6 article-card-text">
     <div class="vstack gap-3">
         <div class="svg-fill-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -326,14 +372,14 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
         </div>
 
         <h3 class="text-capitalize mb-0">
-            Cultural Preservation
+            QualitÃ© du service
         </h3>
 
         <p>
-             We are dedicated to preserving the rich heritage of Aboriginal and Torres Strait Islander communities.
+             Nous nous engageons Ã  fournir un service client exceptionnel et des rÃ©parations automobiles de haute qualitÃ©.
         </p>
     </div>
-</div><div class="col-sm-6 card-text">
+</div><div class="col-sm-6 article-card-text">
     <div class="vstack gap-3">
         <div class="svg-fill-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -344,14 +390,14 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
         </div>
 
         <h3 class="text-capitalize mb-0">
-            Health and Wellbeing
+            IntÃ©gritÃ©
         </h3>
 
         <p>
-             We are committed to providing high-quality health and wellbeing programs to support our community.
+             Nous croyons en l'honnÃªtetÃ©, la transparence et le professionnalisme dans tout ce que nous faisons.
         </p>
     </div>
-</div><div class="col-sm-6 card-text">
+</div><div class="col-sm-6 article-card-text">
     <div class="vstack gap-3">
         <div class="svg-fill-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -362,14 +408,14 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
         </div>
 
         <h3 class="text-capitalize mb-0">
-            Education and Awareness
+            Innovation
         </h3>
 
         <p>
-             We aim to educate and raise cultural awareness in the heart of Alabama.
+             Nous nous efforÃ§ons d'Ãªtre Ã  la pointe de la technologie et d'offrir des solutions innovantes en matiÃ¨re de services Ã©lectriques automobiles.
         </p>
     </div>
-</div><div class="col-sm-6 card-text">
+</div><div class="col-sm-6 article-card-text">
     <div class="vstack gap-3">
         <div class="svg-fill-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
@@ -380,11 +426,11 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
         </div>
 
         <h3 class="text-capitalize mb-0">
-            Community Empowerment
+            Engagement envers la communautÃ©
         </h3>
 
         <p>
-             We strive to empower Aboriginal and Torres Strait Islander communities to thrive and succeed.
+             Nous soutenons et contribuons activement Ã  la communautÃ© de New Brunswick.
         </p>
     </div>
 </div>
@@ -392,7 +438,6 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
             </div>
         </div>
     </div>
-
 </div>
     </div>
     <div class="">
@@ -404,31 +449,38 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
         
     </div>
 </div>
-</div>
+
+
 
 <!-- Footer-->
 
-<footer class="py-5 bg-dark text-center ">
+<footer class="py-5 bg-dark text-center footer-text-color">
 
     <div class="container">
-        <div class="row  py-lg-3" >
+        <div class="row  py-lg-3">
             <div class="col-md-7">
                 <table style="text-align: left">
                     <tr>
-                        <td width="15%"><h2><a style="color: inherit;text-decoration: auto;" href="index.html"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></a></h2></td>
-                        <td style="text-align: left" class=""><h2><a style="text-decoration: auto;" href="index.html">theme4</a></h2></td>
+                        <td width="15%">
+                            <h2>
+                                <a style="color: inherit;text-decoration: auto;" href="index.html"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></a>
+                            </h2>
+                        </td>
+                        <td style="text-align: left" class="footer-text-color">
+                            <h2><a style="text-decoration: auto;" href="index.html">Automatically Generate Titles</a></h2>
+                        </td>
                     </tr>
                     <tr style="display: none">
                         <td width="15%"><i class="fa fa-map-marker-alt footer-text-color"></i></td>
-                        <td style="text-align: left" class=""></td>
+                        <td style="text-align: left" class="footer-text-color"></td>
                     </tr>
                     <tr style="display: none">
                         <td width="15%"><i class="fa fa-phone footer-text-color"></i></td>
-                        <td style="text-align: left" class=" "></td>
+                        <td style="text-align: left" class="footer-text-color "></td>
                     </tr>
                     <tr style="display: ">
                         <td width="15%"><i class="fa fa-envelope footer-text-color"></i></td>
-                        <td style="text-align: left" class="">iqras250260@gmail.com</td>
+                        <td style="text-align: left" class="footer-text-color">aq@gammaweb.co.nz</td>
                     </tr>
                 </table>
 
@@ -438,17 +490,17 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
             <div class="col-md-4">
                 <table class="float-start float-md-end" style="margin-left: 40px;">
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="terms.html">Terms of Use</a></td>
+                        <td style="text-align: left;display: inherit"><a class=" footer-text-color" style="text-decoration: none" href="terms.html">Terms of Use</a></td>
                     </tr>
 
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="privacy.html">Privacy Policy</a></td>
+                        <td style="text-align: left;display: inherit"><a class="footer-text-color" style="text-decoration: none" href="privacy.html">Privacy Policy</a></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="sitemap.html">Sitemap</a></td>
+                        <td style="text-align: left;display: none"><a class=" footer-text-color" style="text-decoration: none" href="sitemap.html">Sitemap</a></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="contact.html">Contact Us</a></td>
+                        <td style="text-align: left;display: inherit"><a class=" footer-text-color" style="text-decoration: none" href="contact.html">Contact Us</a></td>
                     </tr>
                 </table>
 
@@ -456,28 +508,30 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
         </div>
     </div>
 
-    <ul class="mt-3 mb-3" style="display: none">
+    <ul class="mt-3 mb-3" style="display: inherit">
         <li class="list-inline-item" style="display: none">
-            <a  style="text-decoration: none" class="  mr-3" target="_blank"  href=""><i class="fa-2x icon-social-facebook"></i></a>
+            <a style="text-decoration: none" class="footer-text-color  mr-3" target="_blank" href=""><i class="fa-2x icon-social-facebook"></i></a>
         </li>
-        <li class="list-inline-item"  style="display: none">
-            <a  style="text-decoration: none" class="  mr-3" target="_blank"  href=""><i class="fa-2x icon-social-twitter"></i></a>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class="footer-text-color   mr-3" target="_blank" href=""><i class="fa-2x icon-social-twitter"></i></a>
         </li>
-        <li class="list-inline-item"  style="display: none">
-            <a  style="text-decoration: none" class="  mr-3" target="_blank"  href=""><i class="fa-2x icon-social-instagram"></i></a>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class=" footer-text-color   mr-3" target="_blank" href=""><i class="fa-2x icon-social-instagram"></i></a>
         </li>
-        <li class="list-inline-item"  style="display: none">
-            <a  style="text-decoration: none" class="  mr-3" target="_blank"  href=""><i class="fa-2x icon-social-pinterest"></i></a>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class="footer-text-color  mr-3" target="_blank" href=""><i class="fa-2x icon-social-pinterest"></i></a>
         </li>
-        <li class="list-inline-item"  style="display: none">
-            <a  style="text-decoration: none" class=" mr-3" target="_blank"  href=""><i class="fa-2x icon-social-youtube"></i></a>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class="footer-text-color   mr-3" target="_blank" href=""><i class="fa-2x icon-social-youtube"></i></a>
         </li>
     </ul>
 
-    <div class="">
+    <div class="text-white">
         <hr/>
     </div>
-    <div class="container"><p class="m-0 text-center ">Copyright &copy; theme4. All Rights Reserved.</p></div>
+    <div class="container">
+        <p class="m-0 text-center">Copyright &copy; Automatically Generate Titles. All Rights Reserved.</p>
+    </div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -527,4 +581,5 @@ We are committed to fostering an inclusive and diverse society where Indigenous 
 <script>
     document.getElementsByTagName('head')[0].innerHTML = document.getElementsByTagName('head')[0].innerHTML.replace('REPLACE_WITH_URL', window.location.href);
 </script></body>
+
 </html>
